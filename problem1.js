@@ -4,12 +4,14 @@ function cubeNumber(number){
     if(isNaN(number)){
         return 'Please enter Numeric value.'
     }else{
-        return result = Math.pow(number, 3);
+        const result = Math.pow(number, 3);
+        console.log("The Cube of ",number,' is : ');
+        return result;
     }
 }
 
 //Get input
-const number = 4;
+const number = 'a';
 
 // Receive and Print Output
-console.log("The Cube of ",number,' is',cubeNumber(number))
+console.log(cubeNumber(number))
